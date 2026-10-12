@@ -1,0 +1,4 @@
+typer>=0.9
+rich>=13.0
+keyboard>=0.13.5
+pyperclip>=1.8

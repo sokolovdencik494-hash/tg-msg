@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tgmsg"
+version = "1.1.1"
+description = "CLI-утилита: интерактивный мастер + вставка текста в активное поле N раз"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "typer>=0.9",
+    "rich>=13.0",
+    "keyboard>=0.13.5",
+    "pyperclip>=1.8",
+]
+
+[project.scripts]
+tgmsg = "tgmsg.cli:app"
+
+[tool.setuptools]
+packages = ["tgmsg"]
